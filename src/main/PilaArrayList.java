@@ -3,7 +3,7 @@ package src.main;
 import java.util.ArrayList;
 
 public class PilaArrayList<T> extends PilaAbstracta<T> {
-    
+
     private ArrayList<T> elementos;
 
     public PilaArrayList() {
