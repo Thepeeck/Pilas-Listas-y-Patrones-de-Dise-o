@@ -1,4 +1,5 @@
 package src.main;
+
 public class ListaSimple<T> extends ListaAbstracta<T> {
     private Nodo<T> cabeza;
 
