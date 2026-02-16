@@ -29,7 +29,8 @@ public class Principal {
         
         ICalculadora calculadora = new CalculadoraPostfix(pilaCalculo);
         
-        try (BufferedReader lector = new BufferedReader(new FileReader("datos.txt"))) {
+        try (BufferedReader lector = new BufferedReader(new FileReader("dato.txt"))) { 
+            //para que funcione el codigo, se necesita que se lea popor medio de los archivos de compu, dandole copy path al archivo txt, y pegandolo en el codigo, reemplazando el dato.txt
             String linea;
             while ((linea = lector.readLine()) != null) {
                 if (!linea.trim().isEmpty()) {
