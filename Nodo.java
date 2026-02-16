@@ -1,3 +1,4 @@
+package src.main;
 public class Nodo<T> {
     T valor;
     Nodo<T> siguiente;

@@ -1,3 +1,4 @@
+package src.main;
 public class FabricaPilas {
     // tipoPila: 1=ArrayList, 2=Vector, 3=Lista
     // tipoLista: 1=Simple, 2=Doble
