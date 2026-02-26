@@ -22,10 +22,11 @@ public class Principal {
             opcionLista = scanner.nextInt();
         }
 
-        // Pila para caracteres (conversión)
-        IPila<Character> pilaConversion = FabricaPilas.crearPila(opcionPila, opcionLista);
-        // Pila para enteros (evaluación)
-        IPila<Integer> pilaCalculo = FabricaPilas.crearPila(opcionPila, opcionLista);
+        StackFactory<Character> fabricaChar = new StackFactory<>();
+        StackFactory<Integer> fabricaInt  = new StackFactory<>();
+
+        IPila<Character> pilaConversion = fabricaChar.getPila(opcionPila, opcionLista);
+        IPila<Integer>   pilaCalculo    = fabricaInt.getPila(opcionPila, opcionLista);
         
         ICalculadora calculadora = new CalculadoraPostfix(pilaCalculo);
         
